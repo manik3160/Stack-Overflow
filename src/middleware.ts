@@ -11,7 +11,7 @@ export async function middleware(request: NextRequest) {
     getOrCreateDB(),
     getOrCreateStorage()
   ])
-  return NextResponse.next()
+  return NextResponse.nextError() // Intentional CI error here
 }
  
 // See "Matching Paths" below to learn more

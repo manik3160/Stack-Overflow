@@ -26,3 +26,16 @@ jobs:
         
     - name: Build Next.js
       run: npm run build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2

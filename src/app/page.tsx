@@ -111,3 +111,12 @@ export default function Home() {
     </main>
   );
 }
+
+// INTENTIONAL BUILD ERROR FOR NEVERDOWN TESTING
+export function BrokenComponent() {
+  return (
+    <div>
+      <p>This component is missing a closing tag and will break the build!
+    </div>
+  )
+}
